@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structra</title>
+  <meta
+    name="description"
+    content="Structra turns PDFs, DOCX files, and web pages into ML-ready records and Grok-powered fine-tuning datasets."
+  >
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230e1318'/%3E%3Cpath d='M16 42c7-14 14-20 32-20-8 4-13 10-15 18 5-4 10-6 15-6-6 8-14 12-26 12h-6Z' fill='%23b8ff76'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="announcement-bar">
+      <div class="announcement-track">
+        <span>Structra turns PDFs, DOCX files, and websites into AI-ready datasets.</span>
+        <span>Built for medical, legal, research, compliance, and automation teams.</span>
+        <span>Route one source into ML records or fine-tuning JSONL.</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a href="#top" class="brand-lockup">
+        <span class="brand-mark">S</span>
+        <span>
+          <strong>Structra</strong>
+          <small>Data prep for AI automation</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#what-we-do">Platform</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#industries">Industries</a>
+        <a href="#studio">Studio</a>
+        <a href="#workflows">Workflows</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="ghost-link" href="#what-we-do">How It Works</a>
+        <a class="solid-link" href="#studio">Build Dataset</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="hero-kicker">GenAI-ready data starts here</p>
+          <div class="hero-chip">Document intelligence for automation</div>
+          <h1>Turn unstructured files into clean AI training data.</h1>
+          <p class="hero-text">
+            Structra helps teams working in medical, legal, research, finance, and compliance transform PDFs,
+            Word files, and web pages into structured datasets. First we explain the workflow, then you can jump
+            straight into the dataset studio to build ML records or LLM fine-tuning output.
+          </p>
+          <div class="hero-actions">
+            <a class="solid-link hero-button" href="#what-we-do">See What We Do</a>
+            <a class="ghost-link hero-button" href="#studio">Go To Dataset Studio</a>
+          </div>
+          <div class="hero-trust">
+            <span>PDF</span>
+            <span>DOCX</span>
+            <span>Web Scraping</span>
+            <span>ML Prep</span>
+            <span>LLM Fine-Tuning</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <article class="glass-panel hero-panel-main">
+            <p class="mini-banner">Structured for ML and LLM fine-tuning</p>
+            <h2 id="heroTitle">Prepare structured ML-ready records from documents and web pages.</h2>
+            <p id="heroCopy">
+              Structra extracts raw content, chunks it, scores quality, removes near-duplicates, and exports a
+              cleaned machine-learning dataset you can label, rank, or model downstream.
+            </p>
+            <div class="hero-stats">
+              <div>
+                <strong>64+</strong>
+                <span>file patterns handled</span>
+              </div>
+              <div>
+                <strong>2</strong>
+                <span>AI-ready output paths</span>
+              </div>
+              <div>
+                <strong>1</strong>
+                <span>browser-first workspace</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-panel hero-panel-side">
+            <p class="mini-label">What happens next</p>
+            <ul class="pipeline-list">
+              <li><span>Extract</span><strong>PDF, DOCX, URL</strong></li>
+              <li><span>Transform</span><strong>Chunk, score, deduplicate</strong></li>
+              <li><span>Generate</span><strong>ML records or ChatML / Alpaca</strong></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="logo-rail" aria-label="Supported workflows">
+        <span>Healthcare workflows</span>
+        <span>Legal operations</span>
+        <span>Research pipelines</span>
+        <span>Compliance review</span>
+        <span>Internal knowledge</span>
+        <span>Automation prep</span>
+      </section>
+
+      <section id="what-we-do" class="section-block section-story">
+        <div class="section-heading">
+          <p class="hero-kicker">What Structra does</p>
+          <h2>We convert domain documents into automation-ready datasets.</h2>
+          <p>
+            Most teams already have the data they need, but it is trapped inside reports, case files, study notes,
+            SOPs, policy documents, and websites. Structra pulls that content into one workflow and makes it usable
+            for machine learning and fine-tuning.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-tag">Extract</span>
+            <h3>Bring in messy domain content.</h3>
+            <p>Upload PDFs and Word documents or fetch public websites to capture the raw knowledge your team already works with.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-tag">Transform</span>
+            <h3>Clean, chunk, and score for quality.</h3>
+            <p>We remove weak chunks, control overlap, and reduce duplicates so the dataset is more useful before generation even starts.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-tag">Generate</span>
+            <h3>Create datasets for ML or fine-tuning.</h3>
+            <p>Route the cleaned source into structured ML records or Grok-powered ChatML and Alpaca fine-tuning datasets.</p>
+          </article>
+        </div>
+
+        <div class="story-panel">
+          <div>
+            <p class="hero-kicker">For teams under document pressure</p>
+            <h3>Medical records. Legal files. Research PDFs. Compliance manuals.</h3>
+            <p>
+              Structra is designed for industries where expertise is buried in documents and people spend hours
+              cleaning, summarizing, and restructuring information before any automation can begin.
+            </p>
+          </div>
+          <a class="solid-link story-cta" href="#studio">Continue To Dataset Studio</a>
+        </div>
+      </section>
+
+      <section id="studio" class="studio-section">
+        <div class="section-heading section-heading-tight">
+          <p class="hero-kicker">Dataset studio</p>
+          <h2>Structra Studio</h2>
+          <p>
+            This is where you build the output. Choose your source, pick ML dataset or LLM fine-tune mode, then run
+            the workflow and export the results.
+          </p>
+        </div>
+
+        <div class="studio-shell">
+          <aside class="studio-controls">
+            <section class="control-card">
+              <div class="control-card-head">
+                <h3>Source</h3>
+                <p>Choose how you want to ingest content.</p>
+              </div>
+
+              <label class="control-label" for="fileInput">Upload document</label>
+              <label class="file-picker">
+                <input id="fileInput" type="file" accept=".pdf,.docx">
+                <span>Choose PDF or DOCX</span>
+              </label>
+
+              <div class="control-stack">
+                <div class="radio-group compact" id="sourceModeGroup">
+                  <label><input type="radio" name="sourceMode" value="file" checked> File upload</label>
+                  <label><input type="radio" name="sourceMode" value="web"> Web scraper</label>
+                </div>
+                <div id="webSourcePanel" class="stack hidden">
+                  <label class="control-label" for="webUrl">Public URL</label>
+                  <input id="webUrl" type="url" placeholder="https://example.com/article">
+                  <p class="helper-text">Use a public page that allows browser fetches.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="control-card">
+              <div class="control-card-head">
+                <h3>Workflow</h3>
+                <p>Pick the output path that matches your goal.</p>
+              </div>
+
+              <div class="radio-group" id="modeGroup">
+                <label><input type="radio" name="productMode" value="ml" checked> ML dataset</label>
+                <label><input type="radio" name="productMode" value="llm"> LLM fine-tune</label>
+              </div>
+
+              <div class="llm-only control-stack">
+                <label class="control-label" for="model">Model</label>
+                <select id="model">
+                  <option value="x-ai/grok-3-fast" selected>x-ai/grok-3-fast</option>
+                  <option value="x-ai/grok-4-1-fast">x-ai/grok-4-1-fast</option>
+                  <option value="x-ai/grok-4.20">x-ai/grok-4.20</option>
+                  <option value="x-ai/grok-code-fast-1">x-ai/grok-code-fast-1</option>
+                </select>
+
+                <label class="control-label">Output format</label>
+                <div class="radio-group compact" id="formatGroup">
+                  <label><input type="radio" name="outputFormat" value="ChatML" checked> ChatML</label>
+                  <label><input type="radio" name="outputFormat" value="Alpaca"> Alpaca</label>
+                </div>
+
+                <label class="control-label">Dataset style</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="datasetStyle" value="hard_qa" checked> Hard Q/A</label>
+                  <label><input type="radio" name="datasetStyle" value="instruction"> Instruction</label>
+                  <label><input type="radio" name="datasetStyle" value="concise"> Concise</label>
+                  <label><input type="radio" name="datasetStyle" value="exam"> Exam</label>
+                </div>
+              </div>
+            </section>
+
+            <section class="control-card">
+              <div class="control-card-head">
+                <h3>Controls</h3>
+                <p>Shape chunking, generation, and quality filtering.</p>
+              </div>
+
+              <div class="control-stack">
+                <label class="control-label" for="chunkSize">Chunk size</label>
+                <input id="chunkSize" type="range" min="200" max="1000" value="400" step="50">
+                <div class="range-readout"><span>200</span><strong id="chunkSizeValue">400</strong><span>1000</span></div>
+
+                <label class="control-label" for="chunkOverlap">Overlap</label>
+                <input id="chunkOverlap" type="range" min="0" max="200" value="50" step="10">
+                <div class="range-readout"><span>0</span><strong id="chunkOverlapValue">50</strong><span>200</span></div>
+
+                <label class="control-label" for="maxChunks">Max chunks</label>
+                <input id="maxChunks" type="number" min="5" max="200" value="30">
+
+                <div class="llm-only">
+                  <label class="control-label" for="temperature">Temperature</label>
+                  <input id="temperature" type="range" min="0.1" max="1.2" value="0.7" step="0.1">
+                  <div class="range-readout"><span>0.1</span><strong id="temperatureValue">0.7</strong><span>1.2</span></div>
+
+                  <label class="control-label" for="pairsPerChunk">Pairs per chunk</label>
+                  <select id="pairsPerChunk">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+
+                <label class="control-label" for="minChunkLength">Min chunk length</label>
+                <input id="minChunkLength" type="range" min="50" max="300" value="80" step="10">
+                <div class="range-readout"><span>50</span><strong id="minChunkLengthValue">80</strong><span>300</span></div>
+
+                <label class="control-label" for="similarityThreshold">Similarity threshold</label>
+                <input id="similarityThreshold" type="range" min="0.70" max="0.99" value="0.88" step="0.01">
+                <div class="range-readout"><span>0.70</span><strong id="similarityThresholdValue">0.88</strong><span>0.99</span></div>
+
+                <label class="control-label" for="qualityCutoff">Quality score cutoff</label>
+                <input id="qualityCutoff" type="range" min="0" max="100" value="40" step="5">
+                <div class="range-readout"><span>0</span><strong id="qualityCutoffValue">40</strong><span>100</span></div>
+              </div>
+
+              <div class="button-stack">
+                <button id="generateBtn" class="primary-button">Generate dataset</button>
+                <button id="resetBtn" class="secondary-button">Reset</button>
+              </div>
+            </section>
+          </aside>
+
+          <div class="studio-main">
+            <section id="dropzone" class="dropzone">
+              <div class="dropzone-copy">
+                <p class="hero-kicker">Try it now</p>
+                <h3>Drop a PDF or DOCX here</h3>
+                <p>Or switch to the web scraper mode in the control rail and fetch a public page.</p>
+              </div>
+            </section>
+
+            <section id="fileInfoCard" class="content-card hidden">
+              <div class="card-head">
+                <div>
+                  <h3>Source Info</h3>
+                  <p>Current ingestion source and extracted metadata.</p>
+                </div>
+              </div>
+              <div id="fileInfoGrid" class="file-info-grid"></div>
+            </section>
+
+            <section class="metric-grid">
+              <article class="metric-card">
+                <span>Chunks Extracted</span>
+                <strong id="metricChunksExtracted">0</strong>
+              </article>
+              <article class="metric-card">
+                <span id="metricGeneratedLabel">Records Generated</span>
+                <strong id="metricPairsGenerated">0</strong>
+              </article>
+              <article class="metric-card">
+                <span id="metricAcceptedLabel">Records Accepted</span>
+                <strong id="metricPairsAccepted">0</strong>
+              </article>
+              <article class="metric-card">
+                <span>Dedup Removed</span>
+                <strong id="metricDedupRemoved">0</strong>
+              </article>
+            </section>
+
+            <section id="statusCard" class="content-card hidden">
+              <div class="card-head">
+                <div>
+                  <h3>Run Status</h3>
+                  <p id="statusLine">Idle</p>
+                </div>
+                <span id="progressPercent">0%</span>
+              </div>
+              <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+              <pre id="progressPreview" class="progress-preview">Waiting for a source.</pre>
+            </section>
+
+            <section class="content-card preview-card">
+              <div class="card-head">
+                <div>
+                  <h3 id="previewTitle">ML Dataset Preview</h3>
+                  <p id="previewSubtitle">Accepted normalized records with quality features will appear here.</p>
+                </div>
+              </div>
+              <div id="previewEmpty" class="empty-state">
+                Upload a document or fetch a page, then run a Structra workflow to populate the preview.
+              </div>
+              <div id="previewWrap" class="table-wrap hidden">
+                <table id="previewTable">
+                  <thead></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="download-row">
+              <button id="downloadJsonl" class="secondary-button" disabled>Download dataset</button>
+              <button id="downloadReport" class="secondary-button" disabled>Download report</button>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="industries" class="section-block">
+        <div class="section-heading">
+          <p class="hero-kicker">Built for expert industries</p>
+          <h2>Use Structra where the knowledge lives inside documents.</h2>
+        </div>
+        <div class="industry-grid">
+          <article class="industry-card">
+            <h3>Medical</h3>
+            <p>Prepare datasets from reports, discharge summaries, policies, and guidelines to automate review workflows.</p>
+          </article>
+          <article class="industry-card">
+            <h3>Legal</h3>
+            <p>Structure case files, contracts, policies, and precedents for retrieval, summarization, and fine-tuned assistants.</p>
+          </article>
+          <article class="industry-card">
+            <h3>Research</h3>
+            <p>Turn literature, notes, and reference material into high-quality records and instruction-response datasets.</p>
+          </article>
+          <article class="industry-card">
+            <h3>Compliance</h3>
+            <p>Standardize policy-heavy source material into auditable AI inputs for monitoring, search, and automation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflows" class="section-block">
+        <div class="section-heading section-heading-tight">
+          <p class="hero-kicker">Interface options for one team</p>
+          <h2>Structra keeps the UI polished without sacrificing hands-on control.</h2>
+        </div>
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <span class="feature-tag">ML builder</span>
+            <h3>In-browser ML record preparation</h3>
+            <p>Extract snippets, score quality, and export structured records for downstream labeling or model training.</p>
+          </article>
+          <article class="workflow-card">
+            <span class="feature-tag">LLM builder</span>
+            <h3>Grok-powered fine-tuning datasets</h3>
+            <p>Generate ChatML or Alpaca JSONL from the same cleaned source using Puter.js and xAI Grok models.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Structra</strong>
+        <p>Turn domain documents into clean ML and LLM training data.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#studio">Studio</a>
+        <a href="#industries">Industries</a>
+        <a href="#workflows">Workflows</a>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

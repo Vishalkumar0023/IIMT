@@ -1,0 +1,2 @@
+# Structra is now a static browser app.
+# No Python packages are required to run the active product.
